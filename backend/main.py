@@ -27,4 +27,4 @@ class FormData(BaseModel):
 
 @app.post("/form")
 async def submit_form(data: FormData):
-    return {"message": "送信完了！", "data": data}
+    return {"message": "ご質問は03-0000-0000まで", "data": data}

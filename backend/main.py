@@ -5,14 +5,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 # CORS設定
-origins = [
-    "http://localhost:3000",  # ReactアプリのURL
-    "http://localhost:3002",  # ReactアプリのURL（異なるポートを使用している場合）
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -27,4 +22,4 @@ class FormData(BaseModel):
 
 @app.post("/form")
 async def submit_form(data: FormData):
-    return {"message": "ご質問は03-0000-0000まで", "data": data}
+    return {"message": "Form submitted successfully", "data": data}

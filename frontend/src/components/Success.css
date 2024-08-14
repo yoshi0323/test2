@@ -1,0 +1,25 @@
+.success-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.success-container h2 {
+  margin-bottom: 10px;
+}
+
+.success-container p {
+  margin-bottom: 20px;
+  color: green;
+}
